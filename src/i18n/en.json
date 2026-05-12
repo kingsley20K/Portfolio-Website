@@ -1,4 +1,9 @@
 {
+  "start": "Home",
   "hero_title": "Hi, I'm a Developer",
-  "hero_subtitle": "I build modern web applications"
+  "hero_subtitle": "I build modern web applications",
+  "about": "About",
+  "projects": "Projects",
+  "skills": "Skills",
+  "contact": "Contact"
 }

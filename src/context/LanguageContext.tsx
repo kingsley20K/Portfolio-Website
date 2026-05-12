@@ -1,14 +1,61 @@
-import { createContext, useState } from "react"
+import {
+    createContext,
+    useEffect,
+    useState,
+} from 'react'
+import type {ReactNode} from 'react'
+import en from '../i18n/en.json'
+import de from '../i18n/de.json'
+import fr from '../i18n/fr.json'
 
-export const LanguageContext = createContext<any>(null)
+type Language = 'en' | 'de' | 'fr'
 
-export function LanguageProvider({ children }: any) {
-    const [lang, setLang] = useState("en")
+type Translation = typeof en
 
-    const changeLanguage = (l: string) => setLang(l)
+type LanguageContextType = {
+    language: Language
+    translations: Translation
+    changeLanguage: (lang: Language) => void
+}
+
+export const LanguageContext =
+    createContext<LanguageContextType | null>(null)
+
+type Props = {
+    children: ReactNode
+}
+
+const languages = {
+    en,
+    de,
+    fr,
+}
+
+export function LanguageProvider({ children }: Props) {
+    const [language, setLanguage] =
+        useState<Language>(() => {
+            return (
+                (localStorage.getItem('language') as Language) ||
+                'en'
+            )
+        })
+
+    useEffect(() => {
+        localStorage.setItem('language', language)
+    }, [language])
+
+    const changeLanguage = (lang: Language) => {
+        setLanguage(lang)
+    }
 
     return (
-        <LanguageContext.Provider value={{ lang, changeLanguage }}>
+        <LanguageContext.Provider
+            value={{
+                language,
+                translations: languages[language],
+                changeLanguage,
+            }}
+        >
             {children}
         </LanguageContext.Provider>
     )

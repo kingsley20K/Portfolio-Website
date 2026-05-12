@@ -1,4 +1,9 @@
 {
+  "start": "Acceuil",
   "hero_title": "Salut, je suis un developpeur",
-  "hero_subtitle": "je construis des applications web modernes"
+  "hero_subtitle": "je construis des applications web modernes",
+  "about": "À propos",
+  "projects": "Projets",
+  "skills": "Compétences",
+  "contact": "Contact"
 }

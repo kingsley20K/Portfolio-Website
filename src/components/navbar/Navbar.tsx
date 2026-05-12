@@ -1,8 +1,13 @@
 import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
-import ThemeToggle from '../theme/ThemeToggle'
 
-const links = [
+import ThemeToggle from '../theme/ThemeToggle'
+import LanguageSwitcher from '../language/LanguageSwitcher'
+
+import { useLanguage } from '../../hooks/useLanguage'
+
+const sections = [
+    'hero',
     'about',
     'projects',
     'skills',
@@ -13,7 +18,8 @@ export default function Navbar() {
     const [scrolled, setScrolled] = useState(false)
     const [activeSection, setActiveSection] = useState('about')
 
-    // Navbar background
+    const { translations } = useLanguage()
+
     useEffect(() => {
         const handleScroll = () => {
             setScrolled(window.scrollY > 20)
@@ -26,26 +32,23 @@ export default function Navbar() {
         }
     }, [])
 
-    // Scroll spy
     useEffect(() => {
         const handleScroll = () => {
-            const sections = links.map(link =>
-                document.getElementById(link)
-            )
-
-            const scrollPosition = window.scrollY + 200
+            const currentPosition = window.scrollY + 200
 
             sections.forEach(section => {
-                if (!section) return
+                const element = document.getElementById(section)
 
-                const offsetTop = section.offsetTop
-                const offsetHeight = section.offsetHeight
+                if (!element) return
+
+                const offsetTop = element.offsetTop
+                const offsetHeight = element.offsetHeight
 
                 if (
-                    scrollPosition >= offsetTop &&
-                    scrollPosition < offsetTop + offsetHeight
+                    currentPosition >= offsetTop &&
+                    currentPosition < offsetTop + offsetHeight
                 ) {
-                    setActiveSection(section.id)
+                    setActiveSection(section)
                 }
             })
         }
@@ -69,7 +72,7 @@ export default function Navbar() {
         transition-all duration-300
         ${
                 scrolled
-                    ? 'bg-black/70 backdrop-blur-xl border-b border-zinc-800 py-4'
+                    ? 'backdrop-blur-xl backdrop-saturate-150'
                     : 'bg-transparent py-6'
             }
       `}
@@ -81,23 +84,22 @@ export default function Navbar() {
                     href="#hero"
                     className="
             text-lg font-semibold tracking-tight
-            hover:opacity-80
-            transition
+            hover:opacity-80 transition
           "
                 >
-                    YourName
+                    {translations.start}
                 </a>
 
                 {/* Navigation */}
                 <nav className="hidden md:flex items-center gap-8">
 
-                    {links.map(link => {
-                        const isActive = activeSection === link
+                    {sections.map(section => {
+                        const isActive = activeSection === section
 
                         return (
                             <a
-                                key={link}
-                                href={`#${link}`}
+                                key={section}
+                                href={`#${section}`}
                                 className="relative text-sm"
                             >
                 <span
@@ -110,7 +112,7 @@ export default function Navbar() {
                     }
                   `}
                 >
-                  {link.charAt(0).toUpperCase() + link.slice(1)}
+                  {translations[section as keyof typeof translations]}
                 </span>
 
                                 {isActive && (
@@ -132,24 +134,13 @@ export default function Navbar() {
                     })}
                 </nav>
 
-                {/* Right side */}
+                {/* Right Side */}
                 <div className="flex items-center gap-3">
+
+                    <LanguageSwitcher />
+
                     <ThemeToggle />
 
-                    <a
-                        href="https://github.com"
-                        target="_blank"
-                        className="
-              text-sm
-              border border-zinc-800
-              px-4 py-2
-              rounded-xl
-              transition-all duration-300
-              hover:bg-[var(--card)]
-            "
-                    >
-                        GitHub
-                    </a>
                 </div>
             </div>
         </motion.header>
