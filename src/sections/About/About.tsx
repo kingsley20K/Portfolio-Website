@@ -32,7 +32,7 @@ export default function About() {
                     inset-0
                     -z-10
 
-                    bg-[radial-gradient(circle_at_top_left,rgba(120,119,198,0.12),transparent_30%),radial-gradient(circle_at_bottom_right,rgba(255,255,255,0.06),transparent_30%)]
+                    bg-[var(--glow)]
                 "
             />
 
@@ -54,7 +54,7 @@ export default function About() {
                             text-sm
                             uppercase
                             tracking-[0.35em]
-                            text-zinc-500
+                            text-[var(--muted)]
                             mb-8
                         "
                     >
@@ -71,6 +71,8 @@ export default function About() {
                             leading-[0.9]
 
                             max-w-6xl
+
+                            text-[var(--foreground)]
                         "
                     >
                         Building cinematic digital experiences
@@ -106,8 +108,7 @@ export default function About() {
 
                                 leading-[1.5]
 
-                                text-zinc-700
-                                dark:text-zinc-300
+                                text-[var(--foreground)]
 
                                 max-w-4xl
                             "
@@ -127,7 +128,7 @@ export default function About() {
                                 text-xl
                                 leading-relaxed
 
-                                text-zinc-500
+                                text-[var(--muted)]
 
                                 max-w-3xl
                             "

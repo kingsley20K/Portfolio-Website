@@ -53,7 +53,7 @@ export default function Hero() {
                 className="
                     absolute inset-0
 
-                    opacity-[0.03]
+                    opacity-[0.09]
 
                     [background-image:linear-gradient(to_right,#000_1px,transparent_1px),linear-gradient(to_bottom,#000_1px,transparent_1px)]
 
@@ -105,6 +105,7 @@ export default function Hero() {
                             font-black
                             tracking-tight
                             leading-[0.9]
+                            text-[var(--foreground)]
                         "
                     >
                         Building
@@ -125,7 +126,7 @@ export default function Hero() {
                             text-xl
                             leading-relaxed
 
-                            text-zinc-500
+                            text-[var(--muted)]
                         "
                     >
                         Premium frontend engineering with

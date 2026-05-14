@@ -48,7 +48,6 @@ const skillCategories = [
     },
 ]
 
-
 export default function Skills() {
     return (
         <section
@@ -67,7 +66,7 @@ export default function Skills() {
                     inset-0
                     -z-10
 
-                    bg-[radial-gradient(circle_at_top_right,rgba(120,119,198,0.12),transparent_30%),radial-gradient(circle_at_bottom_left,rgba(255,255,255,0.05),transparent_30%)]
+                    bg-[var(--glow)]
                 "
             />
 
@@ -87,7 +86,9 @@ export default function Skills() {
                             text-sm
                             uppercase
                             tracking-[0.35em]
-                            text-zinc-500
+
+                            text-[var(--muted)]
+
                             mb-8
                         "
                     >
@@ -104,6 +105,8 @@ export default function Skills() {
                             leading-[0.9]
 
                             max-w-6xl
+
+                            text-[var(--foreground)]
                         "
                     >
                         Engineering scalable
@@ -139,8 +142,7 @@ export default function Skills() {
 
                             leading-[1.5]
 
-                            text-zinc-700
-                            dark:text-zinc-300
+                            text-[var(--muted)]
 
                             max-w-4xl
                         "
@@ -167,22 +169,14 @@ export default function Skills() {
 
                         <motion.div
                             key={category.title}
-                            initial={{
-                                opacity: 0,
-                                y: 60,
-                            }}
-                            whileInView={{
-                                opacity: 1,
-                                y: 0,
-                            }}
+                            initial={{ opacity: 0, y: 60 }}
+                            whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{
                                 duration: 0.8,
                                 delay: index * 0.12,
                             }}
-                            whileHover={{
-                                y: -8,
-                            }}
+                            whileHover={{ y: -8 }}
                             className="
                                 relative
 
@@ -209,7 +203,7 @@ export default function Skills() {
                                     absolute
                                     inset-0
 
-                                    bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.14),transparent_35%)]
+                                    bg-[var(--glow)]
                                 "
                             />
 
@@ -220,6 +214,8 @@ export default function Skills() {
                                         text-3xl
                                         font-semibold
                                         tracking-tight
+
+                                        text-[var(--foreground)]
                                     "
                                 >
                                     {category.title}
@@ -228,8 +224,9 @@ export default function Skills() {
                                 <p
                                     className="
                                         mt-5
-                                        text-zinc-500
                                         leading-relaxed
+
+                                        text-[var(--muted)]
                                     "
                                 >
                                     {category.description}
@@ -253,11 +250,11 @@ export default function Skills() {
                                                 "
                                             >
 
-                                                <span className="font-medium text-lg">
+                                                <span className="font-medium text-lg text-[var(--foreground)]">
                                                     {skill.name}
                                                 </span>
 
-                                                <span className="text-zinc-500">
+                                                <span className="text-[var(--muted)]">
                                                     {skill.level}%
                                                 </span>
 
@@ -270,17 +267,19 @@ export default function Skills() {
 
                                                     rounded-full
 
-                                                    bg-zinc-200
-                                                    dark:bg-zinc-800
+                                                    border
+                                                    border-zinc-200
+                                                    dark:border-zinc-800
 
-                                                    overflow-hidden
+                                                    bg-white/60
+                                                    dark:bg-white/5
+
+                                                    backdrop-blur-md
                                                 "
                                             >
 
                                                 <motion.div
-                                                    initial={{
-                                                        width: 0,
-                                                    }}
+                                                    initial={{ width: 0 }}
                                                     whileInView={{
                                                         width: `${skill.level}%`,
                                                     }}
@@ -291,11 +290,9 @@ export default function Skills() {
                                                     }}
                                                     className="
                                                         h-full
-
                                                         rounded-full
 
-                                                        bg-black
-                                                        dark:bg-white
+                                                        bg-[var(--accent)]
                                                     "
                                                 />
 

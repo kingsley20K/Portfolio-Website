@@ -55,7 +55,9 @@ export default function Contact() {
                                 text-sm
                                 uppercase
                                 tracking-[0.25em]
-                                text-zinc-500
+
+                                text-[var(--muted)]
+
                                 mb-6
                             "
                         >
@@ -65,13 +67,15 @@ export default function Contact() {
                         <h2
                             className="
                                 text-6xl
-                            md:text-8xl
+                                md:text-8xl
 
-                            font-bold
-                            tracking-[-0.06em]
-                            leading-[0.9]
+                                font-bold
+                                tracking-[-0.06em]
+                                leading-[0.9]
 
-                            max-w-6xl
+                                max-w-6xl
+
+                                text-[var(--foreground)]
                             "
                         >
                             Let’s create
@@ -82,14 +86,13 @@ export default function Contact() {
                         <p
                             className="
                                 text-2xl
-                            md:text-3xl
+                                md:text-3xl
 
-                            leading-[1.5]
+                                leading-[1.5]
 
-                            text-zinc-700
-                            dark:text-zinc-300
+                                text-[var(--muted)]
 
-                            max-w-4xl
+                                max-w-4xl
                             "
                         >
                             Open for freelance work,
@@ -111,19 +114,27 @@ export default function Contact() {
 
                                 rounded-2xl
 
-                                bg-black
-                                text-white
+                                border
+                                border-zinc-200
+                                dark:border-zinc-800
 
-                                dark:bg-white
-                                dark:text-black
+                                bg-white/60
+                                dark:bg-white/5
 
-                                hover:scale-[1.02]
+                                backdrop-blur-md
 
-                                transition
+                                hover:bg-white
+                                dark:hover:bg-zinc-900
+
+                                hover:scale-105
+                                active:scale-95
+
+                                transition-all duration-300
+
+                                text-[var(--foreground)]
                             "
                         >
                             <FaEnvelope />
-
                             Get In Touch
                         </a>
 
@@ -158,7 +169,7 @@ export default function Contact() {
 
                                 rounded-[2.5rem]
 
-                                bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.18),transparent_35%)]
+                                bg-[var(--glow)]
                             "
                         />
 
@@ -169,7 +180,9 @@ export default function Contact() {
                                     text-sm
                                     uppercase
                                     tracking-[0.25em]
-                                    text-zinc-500
+
+                                    text-[var(--muted)]
+
                                     mb-10
                                 "
                             >
@@ -208,16 +221,19 @@ export default function Contact() {
 
                                         <div
                                             className="
-                                                w-12 h-12
+                                                w-10 h-10
+                                                rounded-xl
 
-                                                rounded-2xl
+                                                flex items-center justify-center
 
-                                                flex
-                                                items-center
-                                                justify-center
+                                                border
+                                                border-zinc-200
+                                                dark:border-zinc-800
 
-                                                bg-zinc-100
-                                                dark:bg-zinc-900
+                                                bg-white/60
+                                                dark:bg-white/5
+
+                                                backdrop-blur-md
                                             "
                                         >
                                             {item.icon}
@@ -225,11 +241,11 @@ export default function Contact() {
 
                                         <div>
 
-                                            <p className="text-zinc-500 text-sm mb-1">
+                                            <p className="text-[var(--muted)] text-sm mb-1">
                                                 {item.label}
                                             </p>
 
-                                            <p className="text-lg font-medium">
+                                            <p className="text-lg font-medium text-[var(--foreground)]">
                                                 {item.value}
                                             </p>
 
