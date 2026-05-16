@@ -231,7 +231,7 @@ export default function Navbar() {
                             <ThemeToggle />
 
                             <a
-                                href="https://github.com/YOUR_USERNAME"
+                                href="https://github.com/kingsley20K"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="

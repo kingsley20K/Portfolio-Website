@@ -23,8 +23,10 @@
 //     )
 // }
 import { motion } from 'framer-motion'
+import { useLanguage } from '../../hooks/useLanguage'
 
 export default function Hero() {
+    const { translations } = useLanguage()
     return (
         <section
             id="hero"
@@ -91,7 +93,7 @@ export default function Hero() {
                             mb-8
                         "
                     >
-                        Frontend Engineer • UI Designer
+                        {translations.hero_title}
                     </motion.p>
 
                     <motion.h1
@@ -108,10 +110,7 @@ export default function Hero() {
                             text-[var(--foreground)]
                         "
                     >
-                        Building
-                        immersive
-                        digital
-                        experiences.
+                        {translations.hero_big_title}
                     </motion.h1>
 
                     <motion.p
@@ -129,9 +128,7 @@ export default function Hero() {
                             text-[var(--muted)]
                         "
                     >
-                        Premium frontend engineering with
-                        cinematic interaction, modern architecture
-                        and high-end user experiences.
+                        {translations.hero_subtitle}
                     </motion.p>
 
                 </div>

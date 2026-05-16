@@ -1,26 +1,13 @@
-// import {useLanguage} from "../../hooks/useLanguage.ts";
-//
-// export default function Contact() {
-//     const { translations } = useLanguage()
-//
-//     return (
-//         <section className="h-screen flex flex-col justify-center items-center text-center">
-//             <h1 className="text-5xl font-bold">Hi, ich bin Developer</h1>
-//             <p className="text-gray-400 mt-4">
-//                 {translations.contact}
-//             </p>
-//         </section>
-//     )
-// }
 import { motion } from 'framer-motion'
-
+import {useLanguage} from "../../hooks/useLanguage.ts";
 import {
-    FaEnvelope,
-    FaPhoneAlt,
+    FaEnvelope, FaGithub, FaLinkedin,
+    // FaPhoneAlt,
     FaMapMarkerAlt,
 } from 'react-icons/fa'
 
 export default function Contact() {
+    const { translations } = useLanguage()
     return (
         <section
             id="contact"
@@ -61,7 +48,7 @@ export default function Contact() {
                                 mb-6
                             "
                         >
-                            Contact
+                            {translations.contact}
                         </p>
 
                         <h2
@@ -78,9 +65,7 @@ export default function Contact() {
                                 text-[var(--foreground)]
                             "
                         >
-                            Let’s create
-                            something exceptional
-                            together.
+                            {translations.contact_title}
                         </h2>
 
                         <p
@@ -95,13 +80,11 @@ export default function Contact() {
                                 max-w-4xl
                             "
                         >
-                            Open for freelance work,
-                            collaborations and premium
-                            digital product development.
+                            {translations.contact_subtitle}
                         </p>
 
                         <a
-                            href="mailto:your@email.com"
+                            href="mailto:lesagekingsley1@gmail.com"
                             className="
                                 inline-flex
                                 items-center
@@ -124,7 +107,7 @@ export default function Contact() {
                                 backdrop-blur-md
 
                                 hover:bg-white
-                                dark:hover:bg-zinc-900
+                                dark:hover:bg-zinc-500
 
                                 hover:scale-105
                                 active:scale-95
@@ -135,7 +118,7 @@ export default function Contact() {
                             "
                         >
                             <FaEnvelope />
-                            Get In Touch
+                            {translations.take_contact}
                         </a>
 
                     </div>
@@ -195,17 +178,23 @@ export default function Contact() {
                                     {
                                         icon: <FaEnvelope />,
                                         label: 'Email',
-                                        value: 'your@email.com',
+                                        value: 'lesagekingsley1@gmail.com',
                                     },
                                     {
-                                        icon: <FaPhoneAlt />,
-                                        label: 'Phone',
-                                        value: '+49 123 456789',
+                                        icon: <FaGithub />,
+                                        label: 'GitHub',
+                                        value: 'lesagekingsley1@gmail.com',
                                     },
+
+                                    // {
+                                    //     icon: <FaPhoneAlt />,
+                                    //     label: 'Phone',
+                                    //     value: '+49 17643601624',
+                                    // },
                                     {
                                         icon: <FaMapMarkerAlt />,
                                         label: 'Location',
-                                        value: 'Germany',
+                                        value: translations.location,
                                     },
                                 ].map(item => (
 
@@ -254,6 +243,82 @@ export default function Contact() {
                                     </motion.div>
 
                                 ))}
+                                <a
+                                    href="https://www.linkedin.com/in/kingsley-le-sage-nguena-azanbou-836807297"
+                                    className="
+                                inline-flex
+                                items-center
+                                gap-3
+
+                                mt-14
+
+                                px-8
+                                py-4
+
+                                rounded-2xl
+
+                                border
+                                border-zinc-200
+                                dark:border-zinc-800
+
+                                bg-white/60
+                                dark:bg-white/5
+
+                                backdrop-blur-md
+
+                                hover:bg-white
+                                dark:hover:bg-zinc-500
+
+                                hover:scale-105
+                                active:scale-95
+
+                                transition-all duration-300
+
+                                text-[var(--foreground)]
+                                "
+                                >
+                                    <FaLinkedin />
+                                    LinkedIn
+                                </a>
+                                <a
+                                    href="https://github.com/kingsley20K"
+                                    className="
+                                inline-flex
+                                items-center
+                                gap-3
+
+                                mt-14
+
+                                px-8
+                                py-4
+
+                                rounded-2xl
+
+                                border
+                                border-zinc-200
+                                dark:border-zinc-800
+
+                                bg-white/60
+                                dark:bg-white/5
+
+                                backdrop-blur-md
+
+                                hover:bg-white
+                                dark:hover:bg-zinc-500
+
+                                hover:scale-105
+                                active:scale-95
+
+                                transition-all duration-300
+
+                                text-[var(--foreground)]
+                            "
+                                >
+                                    <FaGithub/>
+                                    GitHub
+                                </a>
+
+
 
                             </div>
 

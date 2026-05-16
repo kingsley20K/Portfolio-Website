@@ -13,8 +13,9 @@
 //     )
 // }
 import { motion } from 'framer-motion'
-
+import {useLanguage} from "../../hooks/useLanguage.ts";
 export default function About() {
+    const {translations} = useLanguage()
     return (
         <section
             id="about"
@@ -58,7 +59,7 @@ export default function About() {
                             mb-8
                         "
                     >
-                        About
+                        {translations.about}
                     </p>
 
                     <h2
@@ -75,8 +76,7 @@ export default function About() {
                             text-[var(--foreground)]
                         "
                     >
-                        Building cinematic digital experiences
-                        with modern engineering & premium interaction.
+                        {translations.about_me}
                     </h2>
 
                 </motion.div>
@@ -113,29 +113,7 @@ export default function About() {
                                 max-w-4xl
                             "
                         >
-                            I design and engineer immersive web experiences
-                            blending motion, performance and scalable frontend architecture.
-
-                            Inspired by Apple, Stripe, Linear and Framer,
-                            my work focuses on creating interfaces that feel
-                            fluid, cinematic and deeply interactive.
-                        </p>
-
-                        <p
-                            className="
-                                mt-10
-
-                                text-xl
-                                leading-relaxed
-
-                                text-[var(--muted)]
-
-                                max-w-3xl
-                            "
-                        >
-                            Specialized in React ecosystems, TypeScript systems,
-                            motion design and premium UI engineering
-                            for high-end modern products.
+                            {translations.about_me_interesse}
                         </p>
                     </motion.div>
                 </div>

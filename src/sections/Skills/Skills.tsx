@@ -1,54 +1,83 @@
-// import {useLanguage} from "../../hooks/useLanguage.ts";
-//
-// export default function Skills() {
-//     const { translations } = useLanguage()
-//
-//     return (
-//         <section className="h-screen flex flex-col justify-center items-center text-center">
-//             <h1 className="text-5xl font-bold">Hi, ich bin Developer</h1>
-//             <p className="text-gray-400 mt-4">
-//                 {translations.skills}
-//             </p>
-//         </section>
-//     )
-// }
 import { motion } from 'framer-motion'
-
-const skillCategories = [
-    {
-        title: 'Frontend',
-        description:
-            'Modern frontend architecture focused on scalability, performance and immersive UI systems.',
-        skills: [
-            { name: 'React', level: 95 },
-            { name: 'TypeScript', level: 92 },
-            { name: 'Next.js', level: 90 },
-            { name: 'Tailwind CSS', level: 94 },
-        ],
-    },
-    {
-        title: 'Animation',
-        description:
-            'Cinematic interactions and premium motion experiences inspired by Apple & Awwwards.',
-        skills: [
-            { name: 'Framer Motion', level: 90 },
-            { name: 'GSAP', level: 84 },
-            { name: 'Three.js', level: 72 },
-        ],
-    },
-    {
-        title: 'Tools & Design',
-        description:
-            'Strong focus on developer workflow, UI systems and modern product design.',
-        skills: [
-            { name: 'Git & GitHub', level: 90 },
-            { name: 'Figma', level: 82 },
-            { name: 'UI/UX Design', level: 86 },
-        ],
-    },
-]
+import { useLanguage } from "../../hooks/useLanguage.ts"
+import { useState } from "react"
 
 export default function Skills() {
+
+    const { translations } = useLanguage()
+
+    const [showAll, setShowAll] = useState(false)
+
+    const skillCategories = [
+        {
+            title: translations.skills_frontend,
+            skills: [
+                { name: 'React', level: 70 },
+                { name: 'TypeScript', level: 58 },
+                { name: 'Next.js', level: 85 },
+                { name: 'HTML5 / CSS3', level: 92 },
+                { name: 'Tailwind CSS', level: 90 },
+            ],
+        },
+
+        {
+            title: translations.skills_backend,
+            skills: [
+                { name: 'Java', level: 88 },
+                { name: 'Spring Boot', level: 65 },
+                { name: 'REST APIs', level: 60 },
+                { name: 'Authentication & Authorization', level: 50 },
+            ],
+        },
+
+        {
+            title: translations.skills_database,
+            skills: [
+                { name: 'PostgreSQL', level: 75 },
+                { name: 'SQL', level: 70 },
+                { name: 'Database Design', level: 72 },
+            ],
+        },
+
+        {
+            title: translations.skills_security,
+            skills: [
+                { name: 'Web Security Basics', level: 58 },
+                { name: 'Authentication Systems', level: 62 },
+            ],
+        },
+
+        {
+            title: translations.skills_animation,
+            skills: [
+                { name: 'Framer Motion', level: 65 },
+                { name: 'Three.js Basics', level: 60 },
+            ],
+        },
+
+        {
+            title: translations.skills_tools,
+            skills: [
+                { name: 'Git & GitLab', level: 70 },
+                { name: 'Docker Basics', level: 65 },
+                { name: 'CI/CD Basics', level: 50 },
+            ],
+        },
+
+        {
+            title: translations.skills_Langue,
+            skills: [
+                { name: translations.Langue1, level: 100 },
+                { name: translations.Langue2, level: 80 },
+                { name: translations.Langue3, level: 40 },
+            ],
+        },
+    ]
+
+    const visibleSkills = showAll
+        ? skillCategories
+        : skillCategories.slice(0, 3)
+
     return (
         <section
             id="skills"
@@ -92,7 +121,7 @@ export default function Skills() {
                             mb-8
                         "
                     >
-                        Skills
+                        {translations.skills}
                     </p>
 
                     <h2
@@ -109,9 +138,7 @@ export default function Skills() {
                             text-[var(--foreground)]
                         "
                     >
-                        Engineering scalable
-                        frontend systems with
-                        premium interaction.
+                        {translations.skills_title}
                     </h2>
 
                 </motion.div>
@@ -147,11 +174,9 @@ export default function Skills() {
                             max-w-4xl
                         "
                     >
-                        Specialized in modern frontend ecosystems,
-                        cinematic motion systems, immersive interfaces
-                        and scalable TypeScript architecture focused on
-                        high-end user experience.
+                        {translations.skills_focused}
                     </p>
+
                 </motion.div>
 
                 {/* SKILLS GRID */}
@@ -165,7 +190,7 @@ export default function Skills() {
                     "
                 >
 
-                    {skillCategories.map((category, index) => (
+                    {visibleSkills.map((category, index) => (
 
                         <motion.div
                             key={category.title}
@@ -220,17 +245,6 @@ export default function Skills() {
                                 >
                                     {category.title}
                                 </h3>
-
-                                <p
-                                    className="
-                                        mt-5
-                                        leading-relaxed
-
-                                        text-[var(--muted)]
-                                    "
-                                >
-                                    {category.description}
-                                </p>
 
                                 {/* SKILLS */}
                                 <div className="mt-12 space-y-8">
@@ -311,6 +325,45 @@ export default function Skills() {
                     ))}
 
                 </div>
+
+                {/* SHOW MORE BUTTON */}
+                {skillCategories.length > 3 && (
+
+                    <div className="flex justify-center mt-20">
+
+                        <button
+                            onClick={() => setShowAll(!showAll)}
+                            className="
+                                px-8 py-4
+
+                                rounded-2xl
+
+                                border
+                                border-zinc-200
+                                dark:border-zinc-800
+
+                                bg-white/60
+                                dark:bg-white/5
+
+                                text-[var(--foreground)]
+
+                                backdrop-blur-md
+
+                                hover:scale-105
+                                active:scale-95
+
+                                transition-all duration-300
+                            "
+                        >
+                            {showAll
+                                ? translations.show_less
+                                : translations.show_more}
+                        </button>
+
+                    </div>
+
+                )}
+
             </div>
 
         </section>

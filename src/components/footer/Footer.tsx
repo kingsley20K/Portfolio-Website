@@ -40,7 +40,7 @@ export default function Footer() {
                     </p>
 
                     <span className="text-xs text-[var(--muted)]">
-                        ©{new Date().getFullYear()} YourName
+                        ©{new Date().getFullYear()}
                     </span>
                 </div>
 
@@ -48,7 +48,7 @@ export default function Footer() {
                 <div className="flex items-center gap-4">
 
                     <a
-                        href="https://github.com"
+                        href="https://github.com/kingsley20K"
                         target="_blank"
                         className="
                             w-10 h-10
@@ -76,7 +76,7 @@ export default function Footer() {
                     </a>
 
                     <a
-                        href="https://linkedin.com"
+                        href="www.linkedin.com/in/kingsley-le-sage-nguena-azanbou-836807297"
                         target="_blank"
                         className="
                             w-10 h-10
@@ -104,7 +104,7 @@ export default function Footer() {
                     </a>
 
                     <a
-                        href="mailto:your@email.com"
+                        href="mailto:lesagekingsley1@gmail.com"
                         className="
                             w-10 h-10
                             rounded-xl

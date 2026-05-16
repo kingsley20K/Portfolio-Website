@@ -1,78 +1,66 @@
-// import {useLanguage} from "../../hooks/useLanguage.ts";
-//
-// export default function Projects() {
-//     const { translations } = useLanguage()
-//
-//     return (
-//         <section className="h-screen flex flex-col justify-center items-center text-center">
-//             <h1 className="text-5xl font-bold">Hi, ich bin Developer</h1>
-//             <p className="text-gray-400 mt-4">
-//                 {translations.projects}
-//             </p>
-//         </section>
-//     )
-// }
 import { motion } from 'framer-motion'
 import { useState } from 'react'
 import ProjectCard from '../../components/project-card/ProjectCard'
+import {useLanguage} from "../../hooks/useLanguage.ts";
 
-const projects = [
-    {
-        title: 'AI SaaS Platform',
-        description:
-            'Modern AI dashboard with premium animations and responsive UX.',
-        video: '/videos/itachi.mp4',
-        tech: ['React', 'TypeScript', 'Tailwind'],
-        github: 'https://github.com/YOUR_USERNAME/project1',
-    },
-    {
-        title: 'Finance Dashboard',
-        description:
-            'Analytics platform inspired by Stripe and Linear.',
-        image: '/images/hero.png',
-        tech: ['Next.js', 'Framer Motion', 'Chart.js'],
-        github: 'https://github.com/YOUR_USERNAME/project2',
-    },
-    {
-        title: 'Creative Studio',
-        description:
-            'Interactive portfolio experience with cinematic transitions.',
-        image: '/images/project3.jpg',
-        tech: ['React', 'GSAP', 'Three.js'],
-        github: 'https://github.com/YOUR_USERNAME/project3',
-    },
-    {
-        title: 'Creative Studio2',
-        description:
-            'Interactive portfolio experience with cinematic transitions.',
-        image: '/images/project3.jpg',
-        tech: ['React', 'GSAP', 'Three.js'],
-        github: 'https://github.com/YOUR_USERNAME/project3',
-    },
-    {
-        title: 'Creative Studio 2',
-        description:
-            'High-end interactive product focused on storytelling and motion.',
-        image: '/images/project3.jpg',
-        tech: ['React', 'Three.js', 'Motion'],
-        github: 'https://github.com/YOUR_USERNAME/project4',
-    },
-    {
-        title: 'Creative Studio 3',
-        description:
-            'Advanced experimental UI concept with motion systems.',
-        image: '/images/project3.jpg',
-        tech: ['React', 'Three.js', 'Framer Motion'],
-        github: 'https://github.com/YOUR_USERNAME/project5',
-    },
-]
 
 export default function Projects() {
+    const { translations } = useLanguage()
     const [showAll, setShowAll] = useState(false)
+    const projects = [
+        {
+            title: translations.projects_title1,
+            description:
+                translations.projects_description1,
+            image: '/images/Pacman.png',
+            tech: ['Java'],
+            github: 'https://github.com/kingsley20K/Pacman',
+        },
+        {
+            title: translations.projects_title2,
+            description:
+                translations.projects_description2,
+            image: '/images/portfolio.png',
+            tech: ['TypeScript', 'CSS', 'React','i18next'],
+            github: 'https://github.com/kingsley20K/Portfolio-Website',
+        },
+        {
+            title: translations.projects_title3,
+            description:translations.projects_description3,
+            video: '/videos/itachi.mp4',
+            tech: ['CSS', 'HTML', 'JavaScript'],
+            github: 'https://github.com/YOUR_USERNAME/project3',
+        },
+        {
+            title: 'Creative Studio2',
+            description:
+                'Interactive portfolio experience with cinematic transitions.',
+            video: '/videos/itachi.mp4',
+            tech: ['React', 'GSAP', 'Three.js'],
+            github: 'https://github.com/YOUR_USERNAME/project3',
+        },
+        {
+            title: 'Creative Studio 2',
+            description:
+                'High-end interactive product focused on storytelling and motion.',
+            image: '/images/project3.jpg',
+            tech: ['React', 'Three.js', 'Motion'],
+            github: 'https://github.com/YOUR_USERNAME/project4',
+        },
+        {
+            title: 'Creative Studio 3',
+            description:
+                'Advanced experimental UI concept with motion systems.',
+            image: '/images/project3.jpg',
+            tech: ['React', 'Three.js', 'Framer Motion'],
+            github: 'https://github.com/YOUR_USERNAME/project5',
+        },
+    ]
 
     const visibleProjects = showAll
         ? projects
         : projects.slice(0, 4)
+
 
     return (
         <section
@@ -97,13 +85,11 @@ export default function Projects() {
                     className="max-w-6xl"
                 >
                     <p className="text-sm uppercase tracking-[0.35em] text-[var(--muted)] mb-8">
-                        Projects
+                        {translations.projects}
                     </p>
 
                     <h2 className="text-6xl md:text-8xl font-bold tracking-[-0.06em] leading-[0.9] text-[var(--foreground)]">
-                        Selected work crafted
-                        with cinematic interaction
-                        & premium engineering.
+                        {translations.projects_introductions}
                     </h2>
                 </motion.div>
 
@@ -121,9 +107,7 @@ export default function Projects() {
                         max-w-4xl
                     "
                 >
-                    A curated collection of modern products,
-                    immersive interfaces and scalable frontend systems
-                    combining motion, storytelling and refined UX.
+                    {translations.projects_subtitle}
                 </motion.p>
 
                 {/* GRID */}

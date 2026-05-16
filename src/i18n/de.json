@@ -1,9 +1,35 @@
 {
   "start": "Willkommen",
-  "hero_title": "Hi, ich bin Entwickler",
-  "hero_subtitle": "Ich erstelle moderne Webanwendungen",
+  "hero_title": "Softwareentwicklung + KI",
+  "hero_subtitle": "Erstklassige Softwareentwicklung mit\n                        hoher Sicherheit\n                        und erstklassigen Benutzererlebnissen.",
+  "hero_big_title": "Wir schaffen\n                        fesselnde\n                        digitale\n                        Erlebnisse.",
   "about": "Über mich",
+  "about_me": "Kingsley-Le-Sage Nguena Azanbou",
+  "about_me_interesse": "Ich studiere im fünften Semester Informatik an der THM (Technische Hochschule Mittelhessen) und habe mich auf Softwareentwicklung und IT-Sicherheit spezialisiert. Es macht mir Spaß, mit modernen Technologien sichere, zuverlässige und skalierbare Systeme zu entwerfen und zu entwickeln.",
   "projects": "Projekte",
+  "projects_introductions": "Eine Auswahl von Arbeiten, die verschiedene Erkenntnisse und Erfahrungen zusammenfassen",
+  "projects_subtitle": "Eine Auswahl moderner Produkte, die von der Softwareentwicklung über die Webentwicklung bis hin zur IT-Sicherheit reicht",
   "skills": "Fähigkeiten",
-  "contact": "Kontakt"
+  "skills_title": "erworbene Kompetenzen",
+  "skills_focused": "mit Schwerpunkt auf Softwareentwicklung und IT-Sicherheit",
+  "skills_frontend":"Frontend-Entwicklung",
+  "skills_backend": "Backend-Entwicklung",
+  "skills_database": "Datenbanken",
+  "skills_security": "IT-Sicherheit",
+  "skills_animation": "Animation & kreative Benutzeroberflächen",
+  "skills_tools": "Tools & Workflow",
+  "skills_Langue": "Sprache",
+  "show_less": "weniger anzeigen",
+  "show_more": "mehr anzeigen",
+  "Langue1": "Französisch",
+  "Langue2": "Deutsch",
+  "Langue3": "Englisch",
+
+
+
+  "contact": "Kontakt",
+  "contact_title": "Lassen Sie uns\n                            gemeinsam\n                            etwas Außergewöhnliches schaffen.",
+  "contact_subtitle": "Ich bin offen für freiberufliche Aufträge,\n                            Kooperationen und die Entwicklung\n                            hochwertiger digitaler Produkte.",
+  "take_contact":"Kontaktieren mich",
+  "location": "Gießen, Deutschland"
 }

@@ -1,9 +1,66 @@
 {
   "start": "Home",
-  "hero_title": "Hi, I'm a Developer",
-  "hero_subtitle": "I build modern web applications",
+
+
+
+  "hero_title": "Software Engineering + AI",
+  "hero_subtitle": "Premium Software engineering with\n                        high security\n                        and high-end user experiences.",
+  "hero_big_title": "Building\n                        immersive\n                        digital\n                        experiences.",
+
+
+
   "about": "About",
+  "about_me": "Kingsley-Le-Sage Nguena Azanbou,",
+  "about_me_interesse": "I am a fifth-semester computer science student at THM (Technical University of Central Hesse) and i focused on software development and IT security. I enjoy designing and building secure, reliable, and scalable systems with modern technologies.",
+
+
+
   "projects": "Projects",
+  "projects_introductions": "A selection of works that summarize various insights and experiences",
+
+  "projects_title1": "Pacman-Game",
+  "projects_description1": "blabla2.",
+
+  "projects_title2": "Portfolio",
+  "projects_description2": "Analytics platform inspired by Stripe and Linear.",
+
+  "projects_title3": "First Portfolio",
+  "projects_description3": "blablbla3",
+
+  "projects_title4": "",
+  "projects_description4": "",
+
+  "projects_title5": "",
+  "projects_description5": "",
+
+  "projects_title6": "",
+  "projects_description6": "",
+
+  "projects_subtitle": "A selection of modern products ranging from software development to web development and IT security",
+
+
+
   "skills": "Skills",
-  "contact": "Contact"
+  "skills_title": "skills acquired",
+  "skills_focused": "focused on software development and IT security",
+  "skills_frontend": "Frontend Development",
+  "skills_backend": "Backend Development",
+  "skills_database": "Databases",
+  "skills_security": "IT Security",
+  "skills_animation": "Motion & Creative UI",
+  "skills_tools": "Tools & Workflow",
+  "skills_Langue": "Language",
+  "show_less": "Show less",
+  "show_more": "Show more",
+  "Langue1": "French",
+  "Langue2": "German",
+  "Langue3": "English",
+
+
+
+  "contact": "Contact",
+  "contact_title": "Let’s create\n                            something exceptional\n                            together.",
+  "contact_subtitle": "Open for freelance work,\n                            collaborations and premium\n                            digital product development.",
+  "take_contact":"Get In Touch",
+  "location": "Giessen, Germany"
 }
