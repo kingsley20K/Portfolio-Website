@@ -4,8 +4,15 @@
 
 
   "hero_title": "Software Engineering + AI",
-  "hero_subtitle": "Premium Software engineering with\n                        high security\n                        and high-end user experiences.",
-  "hero_big_title": "Building\n                        immersive\n                        digital\n                        experiences.",
+  "hero_available": "Available for opportunities",
+  "hero_big_title_1": "Building",
+  "hero_big_title_2": "immersive",
+  "hero_big_title_3": "experiences.",
+  "hero_subtitle": "CS student at THM focused on software development and IT security — crafting secure, scalable, and high-end digital products.",
+  "hero_cta_projects": "View Projects",
+  "hero_cta_contact": "Get in Touch",
+  "hero_badge_role": "Full-Stack Dev",
+  "hero_badge_sec": "IT Security",
 
 
 
