@@ -5,12 +5,12 @@ import Projects from "../sections/Projects/Projects"
 import Skills from "../sections/Skills/Skills"
 import Contact from "../sections/Contact/Contact"
 import Footer from "../components/footer/Footer"
-//import CustomCursor from '../components/cursor/CustomCursor'
+import CustomCursor from '../components/cursor/CustomCursor'
 
 function App() {
     return (
         <div className="min-h-screen bg-[var(--background)] text-[var(--foreground)]">
-            {/*<CustomCursor />*/}
+            <CustomCursor />
             <Navbar />
 
             <main className="pt-32">

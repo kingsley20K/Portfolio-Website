@@ -18,7 +18,16 @@
 
   "about": "About",
   "about_me": "Kingsley-Le-Sage Nguena Azanbou,",
-  "about_me_interesse": "I am a fifth-semester computer science student at THM (Technical University of Central Hesse) and i focused on software development and IT security. I enjoy designing and building secure, reliable, and scalable systems with modern technologies.",
+  "about_me_name1": "Kingsley",
+  "about_me_name2": "Nguena Azanbou",
+  "about_me_interesse": "Fifth-semester CS student at THM, focused on software development and IT security. I enjoy building secure, reliable, and scalable systems with modern technologies.",
+  "about_stack": "Tech I work with",
+  "about_info_location": "Location",
+  "about_info_uni": "University",
+  "about_info_focus1": "Primary Focus",
+  "about_info_focus1_val": "Software Development",
+  "about_info_focus2": "Secondary Focus",
+  "about_info_focus2_val": "IT Security",
 
 
 
