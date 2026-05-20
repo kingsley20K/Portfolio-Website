@@ -24,6 +24,25 @@
   "about_info_focus2_val": "Sécurité informatique",
   "projects": "Projets",
   "projects_introductions": "Une sélection d'ouvrages qui rassemblent diverses découvertes et leçons tirées",
+
+  "projects_title1": "Pacman-Jeu",
+  "projects_description1": "Clone Pac-Man en Java avec IA des fantômes personnalisée et gameplay arcade complet — conçu comme une exploration approfondie de la logique de jeu et de l'OOP.",
+
+  "projects_title2": "Portfolio",
+  "projects_description2": "Portfolio personnel développé avec React 19, TypeScript et Tailwind CSS — avec mode sombre, support trilingue et animations Framer Motion fluides.",
+
+  "projects_title3": "Premier Portfolio",
+  "projects_description3": "blablbla3",
+
+  "projects_title4": "",
+  "projects_description4": "",
+
+  "projects_title5": "",
+  "projects_description5": "",
+
+  "projects_title6": "",
+  "projects_description6": "",
+
   "projects_subtitle": "Une sélection de produits modernes allant du développement de logiciels au développement web en passant par la sécurité informatique",
   "skills": "Compétences",
   "skills_title": "compétences acquises",

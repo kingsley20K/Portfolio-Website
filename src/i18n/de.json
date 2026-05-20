@@ -24,6 +24,25 @@
   "about_info_focus2_val": "IT-Sicherheit",
   "projects": "Projekte",
   "projects_introductions": "Eine Auswahl von Arbeiten, die verschiedene Erkenntnisse und Erfahrungen zusammenfassen",
+
+  "projects_title1": "Pacman-Spiel",
+  "projects_description1": "Pac-Man-Klon in Java mit eigener Geister-KI und vollem Arcade-Gameplay — entstanden als tiefe Auseinandersetzung mit Spiellogik und OOP-Design.",
+
+  "projects_title2": "Portfolio",
+  "projects_description2": "Persönliches Portfolio mit React 19, TypeScript und Tailwind CSS — mit Dark Mode, dreisprachiger Unterstützung und flüssigen Framer Motion Animationen.",
+
+  "projects_title3": "Erstes Portfolio",
+  "projects_description3": "blablbla3",
+
+  "projects_title4": "",
+  "projects_description4": "",
+
+  "projects_title5": "",
+  "projects_description5": "",
+
+  "projects_title6": "",
+  "projects_description6": "",
+
   "projects_subtitle": "Eine Auswahl moderner Produkte, die von der Softwareentwicklung über die Webentwicklung bis hin zur IT-Sicherheit reicht",
   "skills": "Fähigkeiten",
   "skills_title": "erworbene Kompetenzen",

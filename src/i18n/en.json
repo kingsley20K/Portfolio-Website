@@ -35,10 +35,10 @@
   "projects_introductions": "A selection of works that summarize various insights and experiences",
 
   "projects_title1": "Pacman-Game",
-  "projects_description1": "blabla2.",
+  "projects_description1": "Java-based Pac-Man clone with custom ghost AI and full arcade gameplay — built as a deep dive into game logic and OOP design.",
 
   "projects_title2": "Portfolio",
-  "projects_description2": "Analytics platform inspired by Stripe and Linear.",
+  "projects_description2": "Personal portfolio built with React 19, TypeScript, and Tailwind CSS — featuring dark mode, trilingual support, and smooth Framer Motion animations.",
 
   "projects_title3": "First Portfolio",
   "projects_description3": "blablbla3",

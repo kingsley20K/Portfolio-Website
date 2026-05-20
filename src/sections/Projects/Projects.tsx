@@ -11,7 +11,7 @@ export default function Projects() {
         {
             title: translations.projects_title1,
             description: translations.projects_description1,
-            image: `${import.meta.env.BASE_URL}images/Pacman.png`,
+            video: `${import.meta.env.BASE_URL}videos/Pacman-Spiel.mp4`,
             tech: ['Java'],
             github: 'https://github.com/kingsley20K/Pacman',
         },
