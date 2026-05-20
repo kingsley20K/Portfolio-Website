@@ -223,7 +223,7 @@ export default function Hero() {
                             "
                         >
                             <img
-                                src="/images/profil.jpeg"
+                                src={`${import.meta.env.BASE_URL}images/profil.jpeg`}
                                 alt="Kingsley"
                                 className="h-full w-full object-cover object-top"
                             />
