@@ -52,7 +52,7 @@ export function LanguageProvider({ children }: Props) {
         <LanguageContext.Provider
             value={{
                 language,
-                translations: languages[language],
+                translations: languages[language] as Translation,
                 changeLanguage,
             }}
         >
