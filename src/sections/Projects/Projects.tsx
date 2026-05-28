@@ -29,6 +29,13 @@ export default function Projects() {
             tech: ['CSS', 'HTML', 'JavaScript'],
             github: 'https://github.com/kingsley20K',
         },
+        {
+            title: translations.projects_title4,
+            description: translations.projects_description4,
+            image: `${import.meta.env.BASE_URL}images/trello_MVP.PNG`,
+            tech: ['TypeScript', 'React', 'Node.js' ,'PostgreSQL(Supabase)', 'Socket.IO' ,'Dockerfile'],
+            github: 'https://frontend-seven-nu-59.vercel.app',
+        },
     ]
 
     const visible = showAll ? projects : projects.slice(0, 4)

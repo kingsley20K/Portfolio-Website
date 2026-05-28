@@ -34,8 +34,8 @@
   "projects_title3": "Premier Portfolio",
   "projects_description3": "blablbla3",
 
-  "projects_title4": "",
-  "projects_description4": "",
+  "projects_title4": "Application pour la gestion collaborative des tâches",
+  "projects_description4": "Application Kanban collaborative temps réel, inspirée de Trello. Gestion de tableaux, colonnes et cartes avec drag & drop, synchronisation instantanée entre utilisateurs via WebSocket, et authentification JWT sécurisée. Stack : React, TypeScript, Node.js, PostgreSQL (Supabase), Socket.IO.",
 
   "projects_title5": "",
   "projects_description5": "",

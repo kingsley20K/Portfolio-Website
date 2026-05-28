@@ -34,8 +34,8 @@
   "projects_title3": "Erstes Portfolio",
   "projects_description3": "blablbla3",
 
-  "projects_title4": "",
-  "projects_description4": "",
+  "projects_title4": "Anwendung für die gemeinsame Aufgabenverwaltung",
+  "projects_description4": "Eine kollaborative Echtzeit-Kanban-Anwendung, inspiriert von Trello. Verwaltung von Boards, Spalten und Karten per Drag & Drop, sofortige Synchronisierung zwischen Benutzern über WebSocket und sichere JWT-Authentifizierung. Technologie-Stack: React, TypeScript, Node.js, PostgreSQL (Supabase), Socket.IO.",
 
   "projects_title5": "",
   "projects_description5": "",
