@@ -32,7 +32,7 @@ export default function Projects() {
         {
             title: translations.projects_title4,
             description: translations.projects_description4,
-            image: `${import.meta.env.BASE_URL}images/trello_MVP.PNG`,
+            image: `${import.meta.env.BASE_URL}images/trello_MVP.png`,
             tech: ['TypeScript', 'React', 'Node.js' ,'PostgreSQL(Supabase)', 'Socket.IO' ,'Dockerfile'],
             github: 'https://frontend-seven-nu-59.vercel.app',
         },
