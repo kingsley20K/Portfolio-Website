@@ -27,7 +27,7 @@ export default function Projects() {
             description: translations.projects_description3,
             video: `${import.meta.env.BASE_URL}videos/itachi.mp4`,
             tech: ['CSS', 'HTML', 'JavaScript'],
-            github: 'https://github.com/kingsley20K',
+            github: 'https://kingsley20k.github.io/Portefolio_kingsley/',
         },
         {
             title: translations.projects_title4,
@@ -35,6 +35,13 @@ export default function Projects() {
             image: `${import.meta.env.BASE_URL}images/trello_MVP.png`,
             tech: ['TypeScript', 'React', 'Node.js' ,'PostgreSQL(Supabase)', 'Socket.IO' ,'Dockerfile'],
             github: 'https://frontend-seven-nu-59.vercel.app',
+        },
+        {
+            title: translations.projects_title5,
+            description: translations.projects_description4,
+            image: `${import.meta.env.BASE_URL}images/Vintage Car Garage .jpeg`,
+            tech: ['TypeScript', 'React', 'Java' ,'PostgreSQL(Supabase)'],
+            github: 'https://github.com/shahriyarSS/Vintage-Car-Community',
         },
     ]
 

@@ -32,13 +32,13 @@
   "projects_description2": "Persönliches Portfolio mit React 19, TypeScript und Tailwind CSS — mit Dark Mode, dreisprachiger Unterstützung und flüssigen Framer Motion Animationen.",
 
   "projects_title3": "Erstes Portfolio",
-  "projects_description3": "blablbla3",
+  "projects_description3": "Dies ist mein erstes Portfolio, das ich mit meinen Grundkenntnissen in der Webprogrammierung erstellt habe.\nEs ist zwar nicht so gut wie das aktuelle, spiegelt aber gut meinen Wunsch wider, neue Funktionen zu entdecken. ",
 
   "projects_title4": "Anwendung für die gemeinsame Aufgabenverwaltung",
   "projects_description4": "Eine kollaborative Echtzeit-Kanban-Anwendung, inspiriert von Trello. Verwaltung von Boards, Spalten und Karten per Drag & Drop, sofortige Synchronisierung zwischen Benutzern über WebSocket und sichere JWT-Authentifizierung. Technologie-Stack: React, TypeScript, Node.js, PostgreSQL (Supabase), Socket.IO.",
 
-  "projects_title5": "",
-  "projects_description5": "",
+  "projects_title5": "Vintage Car Garage Plattform",
+  "projects_description5": "Die Vintage-Car Plattform verbindet Einlagerer, Lagerhalter, Werkstätten und\nErsatzteilanbieter miteinander. Einlagerer können nach passenden Stellplätzen suchen, Angebote anfragen und zusätzliche Services buchen. Lagerhalter bieten ihre Stellplätze und Leistungen an und stehen im Austausch mit den Einlagerern. Außerdem\nkönnen Lagerhalter Werkstätten für Wartung und Reparaturen einbinden. Einlagerer\nhaben zusätzlich die Möglichkeit, Ersatzteile bei Ersatzteilanbietern zu finden und\nzu reservieren. Die Plattform unterstützt dabei die Kommunikation und den Austausch\nvon Informationen zwischen allen Beteiligten.\n",
 
   "projects_title6": "",
   "projects_description6": "",

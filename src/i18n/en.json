@@ -41,13 +41,13 @@
   "projects_description2": "Personal portfolio built with React 19, TypeScript, and Tailwind CSS — featuring dark mode, trilingual support, and smooth Framer Motion animations.",
 
   "projects_title3": "First Portfolio",
-  "projects_description3": "blablbla3",
+  "projects_description3": "This is my first portfolio, created using my basic knowledge of web programming.\nIt's not as polished as my current one, but it does a good job of reflecting my desire to explore new features. ",
 
   "projects_title4": "Application for collaborative task management",
   "projects_description4": "A real-time collaborative Kanban app inspired by Trello. Manage boards, columns, and cards with drag-and-drop functionality, instant synchronization between users via WebSocket, and secure JWT authentication. Tech stack: React, TypeScript, Node.js, PostgreSQL (Supabase), Socket.IO.",
 
-  "projects_title5": "",
-  "projects_description5": "",
+  "projects_title5": "Vintage-Car platform ",
+  "projects_description5": "The Vintage-Car platform connects vehicle owners, storage providers, repair shops, and\nspare parts suppliers. Vehicle owners can search for suitable parking spaces, request quotes, and book additional services. Storage providers offer their parking spaces and services and communicate with vehicle owners. In addition,\nstorage providers can partner with repair shops for maintenance and repairs. Car owners\nalso have the option to find and reserve spare parts from spare-part suppliers.\nThe platform facilitates communication and the exchange\nof information among all parties involved.\n",
 
   "projects_title6": "",
   "projects_description6": "",

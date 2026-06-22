@@ -32,13 +32,13 @@
   "projects_description2": "Portfolio personnel développé avec React 19, TypeScript et Tailwind CSS — avec mode sombre, support trilingue et animations Framer Motion fluides.",
 
   "projects_title3": "Premier Portfolio",
-  "projects_description3": "blablbla3",
+  "projects_description3": "Il s'agit de mon premier portfolio, que j'ai créé en mettant à profit mes connaissances de base en programmation web.\nIl n'est certes pas aussi abouti que le plus récent, mais il reflète bien mon envie de découvrir de nouvelles fonctionnalités. ",
 
   "projects_title4": "Application pour la gestion collaborative des tâches",
   "projects_description4": "Application Kanban collaborative temps réel, inspirée de Trello. Gestion de tableaux, colonnes et cartes avec drag & drop, synchronisation instantanée entre utilisateurs via WebSocket, et authentification JWT sécurisée. Stack : React, TypeScript, Node.js, PostgreSQL (Supabase), Socket.IO.",
 
-  "projects_title5": "",
-  "projects_description5": "",
+  "projects_title5": "Vintage Car Garage plateforme",
+  "projects_description5": "La plateforme Vintage-Car met en relation les propriétaires de véhicules, les exploitants de parcs de stockage, les garages et\nles fournisseurs de pièces détachées. Les propriétaires de véhicules peuvent rechercher des emplacements adaptés, demander des devis et réserver des services supplémentaires. Les exploitants de parcs de stockage proposent leurs emplacements et leurs prestations, et communiquent avec les propriétaires de véhicules. De plus,\nles exploitants de parcs de stockage peuvent faire appel à des garages pour l'entretien et les réparations. Les propriétaires de véhicules\nont également la possibilité de trouver et de réserver des pièces détachées auprès des fournisseurs de pièces détachées.\nLa plateforme facilite la communication et l’échange\nd’informations entre toutes les parties prenantes.\n",
 
   "projects_title6": "",
   "projects_description6": "",
